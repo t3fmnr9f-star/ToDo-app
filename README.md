@@ -59,7 +59,7 @@ python manage.py runserver
 ---
 
 ## API details
-Full details of endpoints and sample request/response are available in the documentation file: LINK
+Full details of endpoints and sample request/response are available in the documentation file: [LINK](Docs/API_DOC.md)
 
 ### Features:
 * Create, view, edit and delete items
@@ -69,8 +69,7 @@ Full details of endpoints and sample request/response are available in the docum
 ---
 
 ## API testing
-You can use Postman Collection to test all endpoints.
-LINK
+You can use Postman Collection to test all endpoints. [LINK](Docs/postman_collection.json)
 
 Postman Collection contains everything:<br>
 Signup<br>
