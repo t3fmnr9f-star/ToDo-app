@@ -3,7 +3,7 @@ A simple **API-first** ToDo app built with Django and the Django REST Framework.
 Users can create, edit, delete, and search their ToDo items.
 All operations are done via the API and **session-based authentication** is used to stay logged in.
 
-## Technologies
+#### Technologies
 - Python 3.9+
 - Django 4+
 - Django REST Framework
