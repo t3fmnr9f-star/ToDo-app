@@ -72,19 +72,19 @@ Full details of endpoints and sample request/response are available in the docum
 You can use Postman Collection to test all endpoints.
 LINK
 
-Postman Collection contains everything:
-Signup
-Login
-Logout
-Get Todos: View user's Todos
-Create Todo
-Update Todo: with PUT or PATCH
-Delete Todo
-Search Todos: Search by title and content
+Postman Collection contains everything:<br>
+Signup<br>
+Login<br>
+Logout<br>
+Get Todos: View user's Todos<br>
+Create Todo<br>
+Update Todo: with PUT or PATCH<br>
+Delete Todo<br>
+Search Todos: Search by title and content<br>
 Sort Todos: Sort by updated_at or title
 
-How to use:
-open the Postman → File → Import → Select JSON file
+How to use:<br>
+open the Postman → File → Import → Select JSON file<br>
 All requests are ready to test
 
 ---
