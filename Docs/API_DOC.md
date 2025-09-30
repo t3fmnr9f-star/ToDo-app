@@ -141,8 +141,7 @@ password=newpassword
 * **Search:** `GET /api/todos/?search=keyword`
 * **Sort:** `GET /api/todos/?ordering=-updated_at` or `?ordering=title`
 
----
 
 **Note:** All requests are made after login with a valid session.
 
-```
+
