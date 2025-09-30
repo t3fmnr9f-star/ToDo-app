@@ -3,11 +3,11 @@
 ````markdown
 # ToDo API Documentation
 
-این مستندات شامل همه endpointهای پروژه ToDo است.
+This documentation includes all the endpoints of the ToDo project.
 
 ---
 
-## 🔑 احراز هویت
+## 🔑 Authentication
 
 ### Signup
 - **URL:** `/api/signup/`
@@ -15,8 +15,8 @@
 - **Body:**
 ```json
 {
-  "username": "newuser",
-  "password": "newpassword"
+"username": "newuser",
+"password": "newpassword"
 }
 ````
 
@@ -24,7 +24,7 @@
 
 ```json
 {
-  "message": "User created successfully"
+"message": "User created successfully"
 }
 ```
 
@@ -41,7 +41,7 @@ username=newuser
 password=newpassword
 ```
 
-* **Response:** کوکی session ست می‌شود
+* **Response:** Session cookie set
 
 ---
 
@@ -49,13 +49,13 @@ password=newpassword
 
 * **URL:** `/api-auth/logout/`
 * **Method:** POST
-* **Response:** کوکی session پاک می‌شود
+* **Response:** Session cookie cleared
 
 ---
 
 ## 🗂️ Todo Endpoints
 
-> **توجه:** فقط آیتم‌های کاربر لاگین‌شده قابل مشاهده هستند.
+> **Note:** Only logged-in user items are visible.
 
 ### Get Todos
 
@@ -63,19 +63,19 @@ password=newpassword
 * **Method:** GET
 * **Query Params:**
 
-  * `search` (اختیاری): جستجو در title و content
-  * `ordering` (اختیاری): مرتب‌سازی بر اساس `updated_at` یا `title`
+* `search` (optional): Search in title and content
+* `ordering` (optional): Sort by `updated_at` or `title`
 * **Response (200):**
 
 ```json
 [
-  {
-    "id": 1,
-    "title": "خرید میوه",
-    "content": "سیب و پرتقال",
-    "completed": false,
-    "updated_at": "2025-09-30T12:34:56Z"
-  }
+{
+"id": 1,
+"title": "Buy Fruit",
+"content": "Apple and Orange",
+"completed": false,
+"updated_at": "2025-09-30T12:34:56Z"
+}
 ]
 ```
 
@@ -87,8 +87,8 @@ password=newpassword
 
 ```json
 {
-  "title": "مثال",
-  "content": "توضیح"
+"title": "Example",
+"content": "Explanation"
 }
 ```
 
@@ -96,11 +96,11 @@ password=newpassword
 
 ```json
 {
-  "id": 2,
-  "title": "مثال",
-  "content": "توضیح",
-  "completed": false,
-  "updated_at": "2025-09-30T12:40:00Z"
+"id": 2,
+"title": "Example",
+"content": "Explanation",
+"completed": false,
+"updated_at": "2025-09-30T12:40:00Z"
 }
 ```
 
@@ -108,11 +108,11 @@ password=newpassword
 
 * **URL:** `/api/todos/{id}/`
 * **Method:** PATCH
-* **Body (نمونه تغییر وضعیت):**
+* **Body (Example of the status change):**
 
 ```json
 {
-  "completed": true
+"completed": true
 }
 ```
 
@@ -120,11 +120,11 @@ password=newpassword
 
 ```json
 {
-  "id": 2,
-  "title": "مثال",
-  "content": "توضیح",
-  "completed": true,
-  "updated_at": "2025-09-30T12:45:00Z"
+"id": 2,
+"title": "Example",
+"content": "Explanation",
+"completed": true,
+"updated_at": "2025-09-30T12:45:00Z"
 }
 ```
 
@@ -132,17 +132,17 @@ password=newpassword
 
 * **URL:** `/api/todos/{id}/`
 * **Method:** DELETE
-* **Response (204):** بدون محتوا
+* **Response (204):** No content
 
 ---
 
-## 🔍 جستجو و مرتب‌سازی
+## 🔍 Search and Sort
 
-* **جستجو:** `GET /api/todos/?search=کلیدواژه`
-* **مرتب‌سازی:** `GET /api/todos/?ordering=-updated_at` یا `?ordering=title`
+* **Search:** `GET /api/todos/?search=keyword`
+* **Sort:** `GET /api/todos/?ordering=-updated_at` or `?ordering=title`
 
 ---
 
-**توجه:** تمام درخواست‌ها بعد از لاگین با session معتبر انجام می‌شوند.
+**Note:** All requests are made after login with a valid session.
 
 ```
