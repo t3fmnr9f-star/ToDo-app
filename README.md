@@ -12,7 +12,7 @@ All operations are done via the API and **session-based authentication** is used
 
 ---
 
-## Installation and Setup
+### Installation and Setup
 
 1. **Clone the project**
 
