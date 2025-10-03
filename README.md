@@ -61,7 +61,7 @@ python manage.py runserver
 ## API
 Full details of endpoints and sample request/response are available in the documentation file: [LINK](Docs/API_DOC.md)
 
-You can use Postman Collection to test all endpoints. [LINK](Docs/postman_collection.json)
+You can use Postman Collection to test all endpoints. [LINK](Docs/postman_collection.json)  <br>
 How to use: open the Postman → File → Import → Select JSON file<br>
 
 Postman Collection contains everything:<br>
@@ -77,9 +77,6 @@ Sort Todos: Sort by updated_at or title
 
 
 ---
-I also designed the frontend. You can see it in this repo:
-LINK
-
-And I also deployed the site. You can test it in this link:
-LINK
+I also designed the frontend. You can see it in this repo: LINK
+And I also deployed the site. You can test it in this link: LINK
 
