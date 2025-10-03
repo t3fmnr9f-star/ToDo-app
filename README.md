@@ -77,7 +77,7 @@ Sort Todos: Sort by updated_at or title
 
 
 ---
-I also designed the frontend. You can see it in this repo: LINK
+I also designed the frontend. You can see it in this repo.
 
-And I also deployed the site. You can test it in this link: LINK
+And I also deployed the site. You can use it: LINK
 
