@@ -58,18 +58,11 @@ python manage.py runserver
 ---
 ---
 
-## API details
+## API
 Full details of endpoints and sample request/response are available in the documentation file: [LINK](Docs/API_DOC.md)
 
-### Features:
-* Create, view, edit and delete items
-* Search on `title` and `content`
-* Sort (`updated_at` or `title`)
-
----
-
-## API testing
 You can use Postman Collection to test all endpoints. [LINK](Docs/postman_collection.json)
+How to use: open the Postman → File → Import → Select JSON file<br>
 
 Postman Collection contains everything:<br>
 Signup<br>
@@ -82,9 +75,6 @@ Delete Todo<br>
 Search Todos: Search by title and content<br>
 Sort Todos: Sort by updated_at or title
 
-How to use:<br>
-open the Postman → File → Import → Select JSON file<br>
-All requests are ready to test
 
 ---
 I also designed the frontend. You can see it in this repo:
