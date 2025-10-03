@@ -55,8 +55,9 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
----
----
+----
+----
+----
 
 ## API
 Full details of endpoints and sample request/response are available in the documentation file: [LINK](Docs/API_DOC.md)
